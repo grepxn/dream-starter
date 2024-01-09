@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dream</groupId>
+        <artifactId>dream-starter</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>dream-component</artifactId>
+    <packaging>pom</packaging>
+    <description>dream-component模块, pom工程, 管理集成的开源组件</description>
+
+    <modules>
+        <module>dream-component-bom</module>
+        <module>dream-component-catchlog-starter</module>
+        <module>dream-component-domain-starter</module>
+        <module>dream-component-dto</module>
+        <module>dream-component-exception</module>
+        <module>dream-component-extension-starter</module>
+        <module>dream-component-statemachine</module>
+        <module>dream-component-test-container</module>
+        <module>dream-component-mybatis</module>
+        <module>dream-component-redis</module>
+    </modules>
+
+</project>
