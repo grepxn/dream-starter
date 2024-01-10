@@ -13,13 +13,10 @@
     <description>dream-starter脚手架，梦想起航，始于足下。无论前路多艰辛，坚定信念，勇敢飞翔，让梦想照进现实。</description>
 
     <modules>
-        <module>dream-adapter</module>
-        <module>dream-client</module>
-        <module>dream-app</module>
-        <module>dream-domain</module>
-        <module>dream-infrastructure</module>
+        <module>dream-common</module>
         <module>dream-component</module>
-        <module>start</module>
+        <module>dream-modules</module>
+        <module>dream-start</module>
     </modules>
 
     <!-- 定义项目中统一的版本号 -->
@@ -32,7 +29,9 @@
 
         <!-- 框架版本 -->
         <spring-boot.version>3.2.1</spring-boot.version>
-        <mybatis-plus-starter.version>3.5.5</mybatis-plus-starter.version>
+        <dynamic-ds.version>4.2.0</dynamic-ds.version>
+        <mybatis-plus.version>3.5.5</mybatis-plus.version>
+        <p6spy.version>3.9.1</p6spy.version>
         <hutool.version>5.8.22</hutool.version>
 
         <!-- maven插件版本 -->
@@ -105,31 +104,7 @@
                 <scope>import</scope>
             </dependency>
             <!--Project modules-->
-            <dependency>
-                <groupId>com.dream</groupId>
-                <artifactId>dream-adapter</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dream</groupId>
-                <artifactId>dream-client</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dream</groupId>
-                <artifactId>dream-app</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dream</groupId>
-                <artifactId>dream-domain</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dream</groupId>
-                <artifactId>dream-infrastructure</artifactId>
-                <version>${revision}</version>
-            </dependency>
+
             <!--Project modules End-->
 
             <dependency>
@@ -146,6 +121,26 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- dynamic-datasource 多数据源-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot3-starter</artifactId>
+                <version>${dynamic-ds.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- sql性能分析插件 -->
+            <dependency>
+                <groupId>p6spy</groupId>
+                <artifactId>p6spy</artifactId>
+                <version>${p6spy.version}</version>
+            </dependency>
+
+
             <!--Validation API-->
             <!--
                 - javax.validation:javax.validation

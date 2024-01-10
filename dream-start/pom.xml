@@ -9,21 +9,12 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>dream-component</artifactId>
+    <artifactId>dream-start</artifactId>
     <packaging>pom</packaging>
     <description>dream-component模块, pom工程, 管理集成的开源组件</description>
-
     <modules>
-        <module>dream-component-bom</module>
-        <module>dream-component-mybatis-starter</module>
-        <module>dream-component-catchlog-starter</module>
-        <module>dream-component-domain-starter</module>
-        <module>dream-component-dto</module>
-        <module>dream-component-exception</module>
-        <module>dream-component-extension-starter</module>
-        <module>dream-component-statemachine</module>
-        <module>dream-component-test-container</module>
-        <module>dream-component-redis</module>
+        <module>system-admin-start</module>
+        <module>code-generator-start</module>
     </modules>
 
 </project>

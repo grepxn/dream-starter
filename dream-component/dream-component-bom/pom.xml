@@ -54,7 +54,7 @@
             </dependency>
             <dependency>
                 <groupId>com.dream</groupId>
-                <artifactId>dream-component-mybatis</artifactId>
+                <artifactId>dream-component-mybatis-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
